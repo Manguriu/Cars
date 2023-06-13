@@ -14,12 +14,31 @@ const Footer = () => {
             <div className='footer__links'>
                 {footerLinks.map((link)=>(
                     <div key={link.title} className='footer__link'>
-                        <h3>{link.title}</h3>
+                        <h3 className='font-bold'>{link.title}</h3>
+                        {link.links.map((item) => (
+                            <Link key ={item.title} href={item.url} className='text-gray-600'>
+                                {item.title}
+                            </Link>
+                        ))}
                     </div>
                 ))}
 
             </div>
-        </div>
+            </div>
+
+        {/* terms */}
+            <div className='flex justify-between items-center flex-wrap mt-10 border-t border-gray-600 sm:px-16 px-6 py-10'>
+                    <p>Motor Hub <br/> Rights @2023 &copy;</p>
+                    <div className='footer__copyrights-links'>
+                        <Link href="/" className='text-gray-500'>
+                            privacy policy
+                        </Link>
+                        <Link href="/" className='text-gray-500'>
+                            terms of use
+                        </Link>
+                    </div>
+            </div>
+        
     </footer>
   )
 }
