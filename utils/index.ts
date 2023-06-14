@@ -7,6 +7,8 @@
 // 	}
 // };
 
+
+
 // try {
 // 	const response = await fetch(url, options);
 // 	const result = await response.text();
@@ -47,3 +49,6 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
   
 	return rentalRatePerDay.toFixed(0);
   };
+
+
+  

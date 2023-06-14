@@ -17,7 +17,7 @@ export default async function Home() {
      {/* hero section */}
      <Hero />
 
-     <div className='mtt-12 padding-x padding-y max-width' id="explore">
+     <div className='mt-12 padding-x padding-y max-width' id="explore">
       <div className='home__text-container'>
         <h1 className='text-4xl font-extrabold'> Car Catalogue</h1>
         <p>Something you might like</p>
